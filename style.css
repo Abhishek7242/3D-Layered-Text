@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at center, rgb(165, 237, 255), rgb(0, 217, 255));
+}
+
+.container {
+  font-size: 12rem;
+  text-align: center;
+  color: #fcedd8;
+  font-weight: 700;
+  text-shadow: 
+    5px 5px 0 #FFC5C5,
+    10px 10px 0 #FFA07A,
+    15px 15px 0 #FF99CC,
+    20px 20px 0 #FF69B4,
+    25px 25px 0 #FF33CC,
+    30px 30px 0 #FF1A8D;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+}
+.container:hover {
+  transform: scale(1.1) rotate(5deg);
+  text-shadow: 
+    5px 5px 0 #FFC5C5,
+    10px 10px 0 #FF5733,
+    15px 15px 0 #C70039,
+    20px 20px 0 #900C3F,
+    25px 25px 0 #581845,
+    30px 30px 0 #1C1C1C;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    font-size: 5rem;
+  }
+}
